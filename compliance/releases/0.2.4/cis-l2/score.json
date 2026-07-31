@@ -1,0 +1,20 @@
+{
+  "pass": 81,
+  "fail": 4,
+  "other": 0,
+  "total_scored": 85,
+  "score": 95.29,
+  "min_score": 90.0,
+  "meets_floor": true,
+  "gate_pass": true,
+  "enforce": false,
+  "failures": [
+    "configure_custom_crypto_policy_cis",
+    "disable_weak_deps",
+    "ensure_redhat_gpgkey_installed",
+    "use_pam_wheel_group_for_su"
+  ],
+  "regressions": [],
+  "baseline": null,
+  "openscap_line": "OpenSCAP: pass=81 fail=4 score=95.3% (target 90%)"
+}
