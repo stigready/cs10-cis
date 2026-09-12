@@ -2,7 +2,7 @@
 
 **Ansible hardening role** for **CentOS Stream 10** (CIS Benchmark). Suitable for playbooks, Packer/Ansible provisioners, and golden-image pipelines. Search keywords: `ansible`, `ansible-role`, `centos`, `centos-stream`, `cis`, `cis-benchmark`, `cis-hardening`, `compliance`, `cs10`, `devsecops`, `hardening`, `infrastructure`, `openscap`, `rhel`.
 
-StigForge-exported Ansible role **`cs10_cis`** · release **`0.2.4`**.
+StigForge-exported Ansible role **`cs10_cis`** · release **`0.3.0`**.
 Matrix cell status: **`green`**.
 
 ## Install (Ansible Galaxy)
@@ -13,7 +13,7 @@ lives under `compliance/` and is not loaded when the role runs.
 From **Ansible Galaxy** (after import; namespace `stigready`):
 
 ```bash
-ansible-galaxy role install stigready.cs10_cis,0.2.4
+ansible-galaxy role install stigready.cs10_cis,0.3.0
 ```
 
 From **GitHub** (public):
@@ -23,7 +23,7 @@ From **GitHub** (public):
 roles:
   - src: https://github.com/stigready/cs10-cis
     scm: git
-    version: v0.2.4   # or an immutable commit SHA
+    version: v0.3.0   # or an immutable commit SHA
     name: cs10_cis
 ```
 
@@ -38,12 +38,12 @@ Evidence was produced by **docker verify + OpenSCAP** on the factory CI run cite
 
 | Profile | Score | Floor | Gate | Ansible | Evidence tested (UTC) |
 |---|---:|---:|---|---|---|
-| `cis-l1` | **96.3%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260731T090325Z |
-| `cis-l2` | **95.29%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260731T090605Z |
-| `cis-ws-l1` | **96.3%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260731T090752Z |
-| `cis-ws-l2` | **95.24%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260731T091030Z |
+| `cis-l1` | **96.3%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260912T124221Z |
+| `cis-l2` | **96.47%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260912T124440Z |
+| `cis-ws-l1` | **96.3%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260912T124609Z |
+| `cis-ws-l2` | **96.43%** ✓ | 90.0% | PASS ✓ | rc 0 | 20260912T124824Z |
 
-Full artifacts per profile: `compliance/releases/0.2.4/<profile>/` (`score.json`, `results.xml`, `report.html`, `evidence.json`, `evidence-report.html`, `poam.md`).
+Full artifacts per profile: `compliance/releases/0.3.0/<profile>/` (`score.json`, `results.xml`, `arf.xml`, `evidence.json`, `evidence-report.html`, `poam.md`).
 
 ## Reports & review
 
@@ -56,7 +56,7 @@ Full artifacts per profile: `compliance/releases/0.2.4/<profile>/` (`score.json`
 Re-run OpenSCAP in Docker and compare to this release's evidence:
 
 ```bash
-make prove RELEASE=0.2.4
+make prove RELEASE=0.3.0
 ```
 
 Or score your own `results.xml`: see **[compliance/README.md](compliance/README.md)**.
@@ -68,7 +68,7 @@ Or score your own `results.xml`: see **[compliance/README.md](compliance/README.
 
 ## Factory
 
-- Monorepo: [stigready/stigforge](https://github.com/stigready/stigforge) @ `5c2fc8f5ad23bdd66e77fe95e1363d5a10c9f05d`
-- CI run: https://github.com/stigready/stigforge/actions/runs/30617333526
+- Monorepo: [stigready/stigforge](https://github.com/stigready/stigforge) @ `562a1f7c1a8e19235ee26e972174d1be6c88998c`
+- CI run: https://github.com/stigready/stigforge/actions/runs/34693316989
 - Catalog: [https://stigready.com/#stigforge](https://stigready.com/#stigforge)
 
