@@ -259,7 +259,6 @@ cs10cis_kernel_module_freevxfs_disabled: true
 cs10cis_kernel_module_hfs_disabled: true
 cs10cis_kernel_module_hfsplus_disabled: true
 cs10cis_kernel_module_jffs2_disabled: true
-cs10cis_kernel_module_overlayfs_disabled: true
 cs10cis_kernel_module_rds_disabled: true
 cs10cis_kernel_module_sctp_disabled: true
 cs10cis_kernel_module_squashfs_disabled: true
@@ -347,6 +346,7 @@ cs10cis_sshd_set_maxstartups: true
 cs10cis_sudo_add_use_pty: true
 cs10cis_sudo_custom_logfile: true
 cs10cis_sudo_remove_no_authenticate: true
+cs10cis_sudo_require_reauthentication: true
 cs10cis_sysctl_fs_protected_hardlinks: true
 cs10cis_sysctl_fs_protected_symlinks: true
 cs10cis_sysctl_fs_suid_dumpable: true
