@@ -1,9 +1,9 @@
 galaxy_info:
   role_name: cs10_cis
   namespace: stigready
-  description: Ansible role for CentOS Stream 10 CIS Benchmark hardening (cis-l1,
-    cis-l2, cis-ws-l1, cis-ws-l2). ComplianceAsCode/SSG remediation, OpenSCAP-verified
-    in StigForge CI. Install with ansible-galaxy or git.
+  description: Ansible role for CentOS Stream 10, generated from the CIS Red Hat Enterprise
+    Linux 10 Benchmark profiles in ComplianceAsCode SSG 0.1.82 (RHEL 10 content, applied
+    to CentOS Stream 10).
   license: BSD-3-Clause
   min_ansible_version: '2.16'
   platforms:
